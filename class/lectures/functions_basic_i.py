@@ -29,7 +29,7 @@
 #     print(5)
 # x = number_of_great_lakes()
 # print(x)
-# 5
+# 5, none
 
 #6
 # def add(b,c):
@@ -125,14 +125,14 @@
 
 
 #15
-# def foo():
-#     print(1)
-#     x = bar()
-#     print(x)
-#     return 10
-# def bar():
-#     print(3)
-#     return 5
-# y = foo()
-# print(y)
-# 1, 3, 5, 10
+def foo():
+    print(1)
+    x = bar()
+    print(x)
+    return 10
+def bar():
+    print(3)
+    return 5
+y = foo()
+print(y)
+# 1, 3, 10
