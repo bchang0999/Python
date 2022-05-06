@@ -1,0 +1,38 @@
+.big_container{
+    height: 100%;
+    min-width: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rowA{
+    height: 80px;
+    min-width: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.box{
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    margin: -3px;
+}
+
+.box_two{
+        height: 80px;
+        width: 80px;
+        background-color: black;
+        margin: -3px;
+}
+
+h1{
+height: 120px;
+width: 400px;
+background-color: red;
+color: black;
+text-align: center;
+}
+
