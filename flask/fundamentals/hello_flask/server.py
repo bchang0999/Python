@@ -17,7 +17,7 @@ def zebra(num,word):
     return word * int(num)
 
 @app.route('/<name>')
-def name(name):
+def sub(name):
     return "Sorry! No Response.Try again."
 
 
