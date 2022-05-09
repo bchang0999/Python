@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="one">Counter</h1>
+        <div class="two">
+            <p>{{session['keynamecanbe_anyname']}}</p>
+        </div>
+        <div class="three">
+            <form action="/upwasasadmovie" method = "post">
+                <input type="submit" value="+2">
+            </form>
+            <form action='/STOP_HAMMERTIME' method="post">
+                <input type="submit" value="no">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
