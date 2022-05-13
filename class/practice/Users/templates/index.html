@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="giant_container">
+        <h1>Users</h1>
+        {% for u in all_users %}
+    <p>First Name: {{u.first_name}}</p>
+    <p>Last Name: {{u.last_name}}</p>
+    <p>Hobby: {{u.hobby}}</p>
+    <hr>
+{% endfor %}
+    <form action='/create_user'>
+        <input type="submit" value="Add User">
+    </form> 
+    </div>
+</body>
+</html>
+

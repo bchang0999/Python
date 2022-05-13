@@ -1,0 +1,29 @@
+INSERT into dojos(name, created_at) VALUE("coding dojo", now());
+INSERT into dojos(name, created_at) VALUE("Kodokan dojo", now());
+INSERT into dojos(name, created_at) VALUE("Aikikai Hombu dojo", now());
+
+DELETE from dojos WHERE id-1;
+DELETE from dojos WHERE id-1;
+DELETE from dojos WHERE id-1;
+
+INSERT into dojos(name, created_at) VALUE("coding dojo", now());
+INSERT into dojos(name, created_at) VALUE("Kodokan dojo", now());
+INSERT into dojos(name, created_at) VALUE("Aikikai Hombu dojo", now());
+
+INSERT into ninjas(first_name, last_name, created_at, dojo_id) VALUE("Hiyaw", "Haile", now(), 1);
+INSERT into ninjas(first_name, last_name, created_at, dojo_id) VALUE("David", "Pierce", now(), 1);
+INSERT into ninjas(first_name, last_name, created_at, dojo_id) VALUE("Anthony", "Cav", now(), 1);
+
+INSERT into ninjas(first_name, last_name, created_at, dojo_id) VALUE("Jackie", "Chan", now(), 2);
+INSERT into ninjas(first_name, last_name, created_at, dojo_id) VALUE("Bruce", "Lee", now(), 2);
+INSERT into ninjas(first_name, last_name, created_at, dojo_id) VALUE("Jet", "Li", now(), 2);
+
+INSERT into ninjas(first_name, last_name, created_at, dojo_id) VALUE("Dwyane", "Wade", now(), 3);
+INSERT into ninjas(first_name, last_name, created_at, dojo_id) VALUE("Chris", "Bosh", now(), 3);
+INSERT into ninjas(first_name, last_name, created_at, dojo_id) VALUE("Lebron", "James", now(), 3);
+
+SELECT * ninjas WHERE dojo id-1;
+SELECT * ninjas WHERE dojo id-2;
+SELECT * ninjas WHERE dojo id-3;
+
+SELECT * dojo WHERE ninjas id-3;
