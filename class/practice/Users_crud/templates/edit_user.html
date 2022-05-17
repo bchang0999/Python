@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Update</h1>
+        <form action='/updated', methods="POST">
+            <label for="first_name">Full Name</label>
+            <input type="text" name="full_name">
+
+            <label for="Email">Email</label>
+            <input type="text" name="email">
+
+            </form>
+</body>
+</html>
