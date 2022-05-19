@@ -24,8 +24,10 @@
             <td>{{recipe.under_thirty}}</td>
             <td>
                 <a href="/recipes/{{recipe.id}}">View Instructions</a>
+                {% if user.id == recipe.user_id %}
                 <a href="/recipes/edit/{{recipe.id}}">edit</a>
                 <a href="/recipe_delete/{{recipe.id}}">delete</a>
+                {% endif %}
             </td>
         </tr>
         {%endfor%}
